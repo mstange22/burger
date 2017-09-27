@@ -54,7 +54,8 @@ h4 {
     float: left;
     clear:both;
     margin-right: .965%;
-    max-width: 67.57%;
+    width: 365px;
+    max-width: 70.47%;
 }
 
 .eaten {
@@ -65,8 +66,8 @@ h4 {
 
 .eat-button {
     float: right;
-    width: 140px;
-    max-width: 27.03%;
+    width: 142.975px;
+    max-width: 27.60%;
     height: 25px;
     margin-top: 5px;
     margin-bottom: 5px;
