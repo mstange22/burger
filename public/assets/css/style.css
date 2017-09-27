@@ -1,0 +1,108 @@
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+#container {
+    width: 960px;
+    max-width: 95%;
+}
+
+#jumbotron {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 960px;
+    max-width: 95%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#uneaten-container,
+#eaten-container {
+    background-color: #eeeeee;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+#uneaten-container {
+    width: 550px;
+    max-width: 57.29%;
+    margin-right: 1.042%;
+}
+
+#eaten-container {
+    width: 390px;
+    max-width: 40.625%;
+    margin-left: 1.04%;
+}
+
+.uneaten, .eaten {
+    background-color: white;
+    width: 350px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 2px;
+    border: 1px solid black;
+}
+
+.uneaten {
+    float: left;
+    clear:both;
+    margin-right: .965%;
+    max-width: 67.57%;
+}
+
+.eaten {
+    margin: 0 auto;
+    margin-top: 5px;
+    max-width: 100%;
+}
+
+.eat-button {
+    float: right;
+    width: 140px;
+    max-width: 27.03%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: .965%;
+}
+
+#text-area {
+    max-width: 100%;
+    width: 320px;
+}
+
+#add-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+#reset-button {
+    margin-top: 10px;
+}
+
+#update-text {
+    margin-top: 10px;
+    max-width: 100%;
+    width: 300px;
+}
+
+.select {
+    width: 300px;
+    max-width: 100%;
+}
+
+#delete-button,
+#update-button {
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    margin-top: 10px;
+}

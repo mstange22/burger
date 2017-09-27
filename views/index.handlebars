@@ -1,0 +1,57 @@
+<div class="jumbotron text-center" id="jumbotron">
+    <img src="https://killerburger.com/wp-content/uploads/2016/03/2-2.png" width="150">
+    <h2>Eat-Da-Burger!</h2>
+</div>
+<div class="container text-center" id="container">
+    <div class="row">
+
+        {{!-- <div class="col-md-1">
+        </div> --}}
+        <div class="col-xs-7" id="uneaten-container">
+            <h3>Uneaten Burgers</h3>
+            {{#each uneatenBurgers}}
+            <form action="/{{this.id}}?_method=PUT" method="POST">
+                <div class="uneaten text-center">
+                    <span class="uneaten-id">{{this.id}}</span>. {{this.burger_name}}
+                </div>
+                <button class="eat-button btn btn-primary btn-xs" type="submit">Devour It!</button>
+            </form>
+            {{/each}}
+
+        </div>
+
+        <div class="col-xs-5" id="eaten-container">
+            <h3>Eaten Burgers</h3>
+            {{#each eatenBurgers}}
+            <div class="eaten text-center">
+                {{this.id}}. {{this.burger_name}}
+            </div>
+            {{/each}}
+        </div>
+
+        {{!-- <div class="col-md-1">
+        </div> --}}
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2>Add a Burger</h2>
+            <form method="POST" action="/" class="button-size">
+                <textarea id="text-area" type="text" name="burger"></textarea>
+                <button class="btn btn-primary" id="add-button" type="submit">Add</button>
+            </form>
+            <form method="POST" action="/?_method=PUT" class="button-size">
+                <button class="btn btn-default" id="reset-button" type="submit">Un-Devour-Da-Burgers</button>
+            </form>
+            <h2>Delete a Burger</h2>
+            <form action="/?_method=DELETE" method="POST" class="button-size">
+                <select name="id" class="select">
+		            {{#each burgers}}
+			        <option class="options" value="{{this.id}}">{{this.id}}. {{this.burger_name}}</option>
+	            	{{/each}}
+	            </select>
+                <button id="delete-button" class="btn btn-primary" type="submit">Delete</button>
+            </form>
+        </div>        
+    </div>
+</div>
+<br>
