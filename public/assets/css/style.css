@@ -18,14 +18,18 @@ h4 {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 1px solid black;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+}
+
+img {
+    width: 150px;
 }
 
 #uneaten-container,
 #eaten-container {
     background-color: #eeeeee;
     border: 1px solid black;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     padding-bottom: 10px;
 }
 
@@ -60,7 +64,7 @@ h4 {
 
 .eaten {
     margin: 0 auto;
-    margin-top: 5px;
+    margin-top: 15px;
     max-width: 100%;
 }
 
