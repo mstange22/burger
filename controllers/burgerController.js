@@ -7,22 +7,7 @@ module.exports = function (app) {
     app.get("/", function (req, res) {
 
         burger.selectAll(function (data) {
-
-            var uneaten = [];
-            var eaten = [];
-
-            for (var i = 0; i < data.length; i++) {
-
-                if (data[i].devoured) {
-                    eaten.push(data[i]);
-                }
-
-                else {
-                    uneaten.push(data[i]);
-                }
-            }
-
-            res.render("index", { burgers: data, uneatenBurgers: uneaten, eatenBurgers: eaten });
+            res.render("index", { burgers: data });
         });
     });
 

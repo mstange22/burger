@@ -1,26 +1,30 @@
 <div class="jumbotron text-center" id="jumbotron">
-    <img src="assets/images/burger-img.png">
-    <h2>Eat-Da-Burger!</h2>
+    <h1 id="burger-icon"><i class="fa fa-bars" aria-hidden="true"></i></h1>
+    <h2 id="burger-header">Eat-Da-Burger!</h2>
 </div>
 <div class="container text-center" id="container">
     <div class="row">
         <div class="col-xs-7" id="uneaten-container">
             <h3>Uneaten Burgers</h3>
-            {{#each uneatenBurgers}}
+            {{#each burgers}}
+            {{#unless this.devoured}}
             <form action="/{{this.id}}?_method=PUT" method="POST">
                 <div class="uneaten text-center">
                     <span class="uneaten-id">{{this.id}}</span>. {{this.burger_name}}
                 </div>
                 <button class="eat-button btn btn-info btn-xs" type="submit">Devour It!</button>
             </form>
+            {{/unless}}
             {{/each}}
         </div>
         <div class="col-xs-5" id="eaten-container">
             <h3>Eaten Burgers</h3>
-            {{#each eatenBurgers}}
+            {{#each burgers}}
+            {{#if this.devoured}}
             <div class="eaten text-center">
                 {{this.id}}. {{this.burger_name}}
             </div>
+            {{/if}}
             {{/each}}
         </div>
     </div>

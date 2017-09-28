@@ -1,3 +1,4 @@
-INSERT into burgers (burger_name, devoured)
-VALUES ("Double Western Bacon Cheeseburger", false),
-("Veggie Burger", false), ("Kobe Beef Burger", false);
+INSERT into chirps (author, chirp)
+VALUES ("Mike", "chirp 1"),
+("Sahana", "chirp 2"), ("Teddy", "chirp 3");
+SELECT * FROM chirps;
